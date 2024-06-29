@@ -1,0 +1,56 @@
+body {
+    background: #222222;
+    padding-top: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px auto 0;
+}
+
+ul > li {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 15px;
+}
+ul > li:first-child {
+    margin-top: 0;
+}
+ul > li.button {
+    margin-top: 30px;
+}
+
+ul > li > input, ul > li > select {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+ul > li > button {
+    background: #666666;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.result {
+    display: none;
+    max-width: 300px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+.result.show {
+    display: flex;
+    flex-direction: column;
+}
