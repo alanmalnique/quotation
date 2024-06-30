@@ -10,6 +10,11 @@ This is a laravel based project, developed by Alan Malnique Justino, to calculat
 ## How to configure the project
 - Start running:
   - `composer install`
+- Make a copy from .env.example:
+  - `cp .env.example .env`
+- Setup all the settings in .env, and add a valid JWT token inside the variable API_JWT_TOKEN:
+  - `API_JWT_TOKEN={Valid JWT token Here}`
+  - This token will be used to communicate via API by front-end.
 - Then, you have to generate the app key running:
   - `php artisan key:generate`
 - Create a database in your MySQL server, and then run:
